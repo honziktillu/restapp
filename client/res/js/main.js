@@ -89,7 +89,7 @@ const postBookEvent = async () => {
       data.createdBook.payload
     )}</p>`;
   } catch (error) {
-    info.innerText = postBookEvent;
+    info.innerText = error;
   }
 };
 postBookBtn.onclick = postBookEvent;
